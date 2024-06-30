@@ -1,0 +1,905 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-weight: 400;
+    line-height: 1.66;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #FFFFFF;
+    padding: 40px;
+}
+
+.main-head{
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+}
+
+.icon-no i, .icon-mail i{
+    color: #CCA774;
+    font-size: 18px;
+}
+
+.icon-no i{
+    transform: rotate(40deg);
+}
+
+.free a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.navbar{
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .navbar-nav .nav-item a{
+    color: #636262;
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar .navbar-nav .nav-item .active{
+    color: #CCA774;
+}
+
+.icons-main{
+    word-spacing: 10px;
+    color: #777777;
+    font-size: 13px;
+    margin-right: 2em;
+}
+
+.icons-main .fa-wifi{
+    rotate: 50deg;
+}
+
+.icons-main span i:hover{
+    color: #CCA774;
+    cursor: pointer;
+}
+
+.hero{
+    background: url(img/header-bg.jpg);
+    background-size: cover;
+    transform: scale(1.7);
+    height: 400px;
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 7em;
+}
+
+.overlay{
+    background-color: black;
+    height: 400px;
+    opacity: 70%;
+}
+
+.hero-text{
+    position: absolute;
+    top: 10em;
+    left: 430px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+}
+
+.hero-text p{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hero-text h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.hero-text h1 span{
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-text button{
+    background-color: transparent;
+    border: 2px solid #CCA774;
+    outline: none;
+    padding: 5px;
+    width: 120px;
+    transform: scale(0.8);
+    color: #fff;
+    font-size: 12px;
+}
+
+.hero-text button:hover{
+    background-color: #CCA774;
+    transition: 0.4s ease;
+}
+
+.form{
+    background-color: #FFFFFF;
+    height: 120px;
+    width: 700px;
+    position: relative;
+    top: -3em;
+    left: 300px;
+    box-shadow: 0px 1px 20px 2px #777;
+    padding: 20px;
+    transform: scale(0.8);
+   text-align: center;
+}
+
+.form .firstinputs input{
+    height: 40px !important;
+    transform: scale(0.7);
+    padding: 10px;
+    border: 0.5px solid #777;
+    width: 400px;
+    margin-left: -3em;
+    outline: black;
+}
+
+.form .firstinputs select{
+    height: 40px !important;
+    transform: scale(0.7);
+    padding: 10px;
+    border: 0.5px solid #777;
+    width: fit-content;
+    outline: none;
+    margin-left: -4em;
+    margin-right: 3em;
+}
+
+.form select{
+    color: #585757;
+}
+
+.form .lastinputs input{
+    height: 40px !important;
+    transform: scale(0.7);
+    padding: 10px;
+    border: 0.5px solid #777;
+    width: 400px;
+    margin-left: -3em;
+    outline: black;
+}
+
+.form .lastinputs select{
+    height: 40px !important;
+    transform: scale(0.7);
+    padding: 10px;
+    border: 0.5px solid #777;
+    width: 180px;
+    outline: none;
+    margin-right: -2em;
+    margin-left: -1em;
+
+}
+
+.form .lastinputs button{
+    width: 200px;
+    margin-left: 1em;
+    border: 1px solid #CCA774;
+    background-color: #CCA774;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px !important;
+    height: 30px;
+}
+
+.form .lastinputs button:hover{
+    background-color: transparent;
+    transition: 0.4s ease;
+}
+
+.welcome{
+    background-color: #F8F8F8;
+    height: 1000px !important;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.welcome-imgs{
+    position: relative;
+    top: 25em;
+    left: 100px;
+}
+
+.welcome-imgs .banner3{
+    margin-top: 3px;
+}
+
+.welcome-imgs .text{
+    margin-right: 10em;
+    margin-top: 5em;
+}
+
+.welcome-imgs .text h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.welcome-imgs .text p{
+    color: #777;
+    font-size: 14px;
+    margin-top: 2em;
+}
+
+.welcome-imgs button{
+    border: 2px solid #CCA774;
+    background-color: #CCA774;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    padding: 10px;
+    width: 150px;
+    margin-top: 2em;
+}
+
+.welcome-imgs button:hover{
+    background-color: transparent;
+    color: #000;
+    transition: 0.4s ease;
+}
+
+.explore{
+    height: 800px;
+    width: 100%;
+    background-color: #F8F8F8;
+    margin-top: -1em;
+}
+
+.explore-icon, .explore-head{
+    text-align: center;
+    margin-top: 1em;
+}
+
+.explore-head h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.explore-cards{
+    padding: 30px;
+}
+
+.content{
+    position: relative;
+    padding: 0 20px 20px ;
+    z-index: 0;
+}
+
+.content h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.content h3 span{
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+.content h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.content p{
+    color: #777;
+    font-size: 15px;
+}
+
+.content .book{
+    color: #000;
+    font-family: 'Playfair Display', serif;
+}
+
+.content::after{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    height: 100px;
+    width: 400px;
+    right: 0;
+    left: 0;
+    top: -20px;
+    transform: skewY(6deg);
+    z-index: -1;
+}
+
+.card{
+    transform: scale(0.9);
+    border: none !important;
+    width: 600px;
+    padding: 10px;
+}
+
+.card:hover h4, .card:hover .book{
+    color: #CCA774;
+    transition: 0.3s ease;
+}
+
+.card:hover .book span{
+    margin-left: 5px;
+}
+
+.seaplace{
+    background: url(img/video-bg.png);
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    padding-top: 7em;
+}
+
+.seaplace .play{
+    font-size: 28px;
+    color: #CCA774;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    width: 60px;
+    margin-left: 21em;
+}
+
+.seaplace h2, 
+.seaplace p
+{
+    color: #fff;
+}
+
+.seaplace h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 0.5em;
+    margin-left: -0.8em;
+}
+
+.facilities{
+    background-color: #F8F8F8;
+    height: 1000px;
+    padding: 80px;
+}
+
+.faccility-icon,
+.facility-text{
+    text-align: center;
+}
+
+.facility-text h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+.big-img{
+    margin-top: 2em;
+}
+
+.facilityCards{
+    margin-top: 2em;
+}
+
+.facilityCards .card{
+    padding: 30px !important;
+    background-color: #fff;
+}
+
+.facilityCards .card h3 span{
+    color: #CCA774;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.facilityCards .card h3{
+    color: #000;
+    font-family: 'Playfair Display', serif;
+}
+
+.facilityCards .card p{
+    color: #777;
+    font-size: 15px;
+}
+
+.facilityCards .card:hover{
+    background-color: #CCA774 !important;
+    color: #fff ;
+    transition: 0.5s ease;
+}
+
+.facilityCards .card:hover span,
+.facilityCards .card:hover h3,
+.facilityCards .card:hover p
+{
+    color: #fff;
+}
+
+.guests{
+    background-color: #FFFFFF;
+    height: 700px;
+    width: 100%;
+    padding-top: 90px;
+}
+
+.guests-icon,
+ .guest-head{
+   text-align: center;
+}
+
+.guest-head h2{
+    margin-top: 0.5em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.slider{
+    margin-top: 3em !important;
+}
+
+.slider .guest {
+    background-color: #F7F9F9;
+    padding: 16px;
+    height: 250px;
+}
+
+.slider .guest .testi-img img{
+    margin-top: 2em;
+    margin-left: 3em;
+    position: absolute;
+    top: 2em;
+}
+
+.slider .guest .testi-text {
+    width: 225px;
+    margin-left: 10em;
+    margin-top: -3em;
+    position: absolute;
+    top: 5em;
+}
+
+.slider .guest .testi-text p{
+    color: #777;
+}
+
+.slider .guest:hover{
+    background-color: #fff;
+    box-shadow: 2px 1px 18px 3px #d8d8d8;
+    transition: 0.4s ease;
+}
+
+.newsEventsCards .card{
+    background-color: #F8F8F8;
+    border: none;
+    outline: none;
+}
+
+.news-events-head{
+    text-align: center;
+}
+
+.news-events-head img{
+    height: 35px;
+}
+
+.news-events-head h2{
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+.newsEventsCards .card span{
+    color: #CCA774;
+}
+
+.newsEventsCards .card .read span,
+.newsEventsCards .card .read
+{
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.newsEventsCards .card .read:hover{
+    color: rgb(47, 47, 170);
+    cursor: pointer;
+}
+
+.newsEventsCards .card .content::after{
+    position: absolute;
+    content: '';
+    background-color: #F8F8F8;
+    height: 100px;
+    width: 410px;
+    right: 0;
+    left: 0;
+    top: -20px;
+    transform: skewY(-6deg);
+    z-index: -1;
+}
+
+.newsEventsCards .content h3{
+    font-size: 25px;
+    margin-top: 1em;
+}
+
+.news-events{
+    background-color: #fff;
+    height: 800px;
+    width: 100%;
+    padding-top: 60px;
+    margin-top: -8em;
+}
+
+.newsEventsCards .card:hover h3{
+    color: #CCA774;
+    transition: 0.3s ease;
+}
+
+.newsEventsCards .card:hover .read span{
+    margin-left: 0.7em;
+    transition: 0.3s ease;
+}
+
+footer{
+    background-color: #0B1A2A;
+    height: 600px;
+    margin-top: 5em;
+    padding-top: 100px;
+    padding-left: 60px;
+}
+
+footer .row{
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-top: 3em;
+    margin-left: 20px;
+    width: 1000px;
+}
+
+footer .row .footer-widget h3{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 0.7em;
+    width: 180px;
+}
+
+
+footer .row .footer-widget p{
+    width: fit-content;
+}
+
+footer .row .footer-widget p a{
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+}
+
+footer .row .footer-widget p a:hover{
+    color: #CCA774;
+}
+
+#newsletter{
+    width: 300px;
+}
+
+#newsletter p{
+    color: #777;
+    font-size: 14px;
+}
+
+#newsletter .input-group .col input{
+    padding: 10px;
+    padding-left: 20px;
+    width: 260px;
+    outline: none;
+    border: none;
+    background-color: #363A4B;
+    margin-left: -2em;
+    margin-top: -1em;
+    color: #fff;
+    font-size: 14px;
+}
+
+#newsletter .input-group .col button{
+    padding: 5px;
+    width: 100px;
+    outline: none;
+    border: none;
+    background-color: #CCA774;
+    margin-left: -3em;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Playfair Display', serif;
+}
+
+.copy{
+    margin-top: 5em;
+    margin-left: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.copy-text p span{
+    color: #CCA774;
+}
+
+.social-icons{
+    margin-right: 5em;
+}
+
+.social-icons i{
+    background-color: #2F3C4A;
+    padding: 10px;
+}
+
+.social-icons i:hover{
+    background-color: #CCA774;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 450px){
+    html,body{
+        overflow-x: hidden;
+    }
+
+    header .contact{
+        display: none;
+    }
+
+    .hero-text{
+        left: 7.5em;
+        text-align: center;
+    }
+
+    .hero-text p{
+        font-size: 10px;
+    }
+
+    .hero-text h1{
+        font-size: 20px;
+    }
+
+    .form{
+        margin-left: -17em;
+        width: 100%;
+        height: 400px;       
+    }
+
+    form .firstinputs,
+    form .lastinputs
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center !important;
+    }
+
+    .arrival , .rooms {
+        margin-left: -3em !important;
+        margin-right: 5em !important;
+        width: 400px !important;
+    }
+
+    .form .lastinputs button{
+        margin-top: 1em !important;
+        width: 280px;
+    }
+
+    .lastinputs select{
+        width: 400px !important;
+        margin-left: -3em !important;
+    }
+
+    .welcome{
+        margin-top: 40em;
+        height: 2000px !important;
+    }
+
+    .welcome-imgs{
+        width: 500px;
+        padding-right: 8em;
+        padding-left: -13em;
+        padding-top: -2em;
+        margin-top: -10em !important;
+    }
+
+    .welcome-imgs img{
+        height: 310px;
+        width: 100%;
+        margin-left: -3.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .welcome > .text{
+        margin-top: -200em !important;
+        position: relative;
+        top: -20em;
+        z-index: 1;
+    }
+
+    .welcome .text p{
+        width: 300px;
+    }
+    
+    .explore{
+        height: 2100px;
+    }
+   
+    .explore-cards .card {
+            margin-right: 20em !important;
+            margin-left: -6em;
+            transform: scale(0.7);
+            margin-bottom: -10em;
+        }
+
+        .seaplace{
+        padding-left: 2em;
+        }
+
+        .seaplace .play{
+            margin-left: 6em;
+        }
+
+        .facilities .facility-text h2{
+            font-size: 35px;
+            width: 100%;
+        }
+
+        .facilities{
+            height: fit-content;
+        }
+
+        .big-img img{
+            height: 200px;
+            width: 400px; 
+            margin-left: -3em;
+        }
+
+        .facilityCards {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            margin-left: -3em !important;
+        }
+    
+        
+        .facilityCards .card {
+        padding: 150px;
+          width: 400px;
+        }
+        
+        .facilityCards .row .card h3 {
+            width: 250px;
+        }
+        
+        .facilityCards .row .card,
+        .facilityCards .row .card p {
+            width: 350px;
+            margin-right: 4em;
+            margin-left: -4em;
+            font-size: 12px;
+        }
+        
+
+        .facilityCards .card:hover{
+            background-color: #CCA774 ;
+            color: #fff ;
+            transition: 0.5s ease;
+        }
+
+        .guests{
+            height: 1100px !important;
+        } 
+
+         .slider{
+            display: flex;
+            flex-direction: column;
+            margin-top: -1em !important;
+            margin-left: -2em !important;
+        } 
+
+         .slider .guest{
+            padding: 120px;
+            width: 600px !important;
+            background-color: #F7F9F9;
+            margin-left: 1em;
+        }
+
+        .testi-text{
+            margin-left: 1em !important;
+        }
+
+        .testi-img{
+            margin-left: -8em;
+        }
+
+         .card{
+            transform: scale(0.8);
+        }
+
+        .news-events{
+            height: 2000px;
+        }
+
+        .newsEventsCards .row{
+           display: flex;
+           flex-direction: column;
+        }
+
+        .newsEventsCards .card{
+            margin-bottom: -5rem;
+        }
+
+        .newsEventsCards .card .content::after{
+            height: 100px;
+            width: 450px;
+            right: 0;
+            left: 0;
+            top: -20px;
+        }
+
+        footer{
+            height: 1400px;
+            padding: 10px;
+            width: 100%;
+            background-color: #222222;
+        }
+
+        footer .row{
+            display: flex;
+            flex-direction: column !important;
+            width: 100%;
+        }
+
+        footer .row .col p a{
+            width: 100%;
+        }
+
+        footer .row #newsletter .input-group{
+            display: flex;
+            width: 21em;
+        }
+
+        footer .copy{
+           display: flex;
+           flex-direction: column;
+           text-align: center;
+        }
+
+        .social-icons{
+            margin-left: 5em;
+        }
+}
